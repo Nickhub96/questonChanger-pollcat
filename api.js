@@ -15,6 +15,6 @@ exports.getAnswersbyQid = question_id => {
   return axios
     .get(`https://pollcat-backend.herokuapp.com/api/answers/${question_id}`)
     .then(({ data }) => {
-      console.log(data);
+      return data;
     });
 };
